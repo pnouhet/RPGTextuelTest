@@ -29,11 +29,13 @@ public class Encounters {
 			System.out.println(player.getName() + " HP: " + player.getHp() + "/" + player.getMaxHp());
 			System.out.println(monster.getName() + " HP: " + monster.getHp() + "/" + monster.getMaxHp());
 			System.out.println("Que voulez-vous faire ?\n(1) Attaquer\n(2) Fuir le combat");
+			String inputStr = scanner.nextLine();
 			
-			int choice = -1;
+			//int choice = -1;
 			try {
 				int playerDmg = Math.max(1, player.getAttack() - monster.getDefense());
 				int monsterDmg = Math.max(1, monster.getAttack() - player.getDefense());
+				int choice = Integer.parseInt(inputStr);
 				
 				//Logique d'attaque
 				if(choice == 1) {

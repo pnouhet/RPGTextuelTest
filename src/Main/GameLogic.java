@@ -182,7 +182,6 @@ public class GameLogic {
 		int newX = player.getX();
 		int newY = player.getY();
 		
-		input = scanner.nextInt();
 		switch (input){
 			case 1: newX--; break; //newX--
 			case 2: newX++; break; //newX++
