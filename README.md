@@ -31,14 +31,14 @@ Ce projet est un mini-jeu de RPG Textuel conçu pour être joué directement dan
 
     Histoire Évolutive : Une trame narrative se déroule à travers différents Actes qui se déclenchent en fonction de votre progression dans le Donjon.
     Le programme est structuré en sept (7) packages principaux pour une organisation claire et modulaire :
-        Package	Description	Classes Clés
+    Package	Description	Classes Clés
         AsciiArt	Regroupe les représentations visuelles en Art Ascii utilisées pour illustrer les classes du personnage et d'autres éléments.	
         Encounters	Gère tous les événements qui se produisent lorsque le joueur rencontre quelque chose sur une case : Monstre, Obstacle, Shop ou la Sortie.
         Entities	Définit toutes les entités actives dans le jeu (joueur et ennemis).	Entity (Abstraite), Monstre, Obstacle, Player
-        Items	Gère la création et les propriétés des objets trouvables ou achetable dans le jeu.	Item (Abstraite), Potion, Weapon
-        Main	Contient la logique d'initialisation et le cœur du jeu.	Game (Initialisation), GameLogic (Logique principale)
-        Story	Contient le scénario du jeu, avec différents Actes déclenchés par le niveau du Donjon.
-        World	Définit la structure du Donjon (la carte) et les propriétés de ses cases.	Donjon, Case
+        Items	    Gère la création et les propriétés des objets trouvables ou achetable dans le jeu.	Item (Abstraite), Potion, Weapon
+        Main	    Contient la logique d'initialisation et le cœur du jeu.	Game (Initialisation), GameLogic (Logique principale)
+        Story	    Contient le scénario du jeu, avec différents Actes déclenchés par le niveau du Donjon.
+        World	    Définit la structure du Donjon (la carte) et les propriétés de ses cases.	Donjon, Case
 
 🧩 Détail des Entités (Entities)
 
